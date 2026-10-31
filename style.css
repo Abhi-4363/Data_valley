@@ -155,6 +155,20 @@ html, body {
   display: block;
 }
 
+.qr-link {
+  display: block;
+  text-decoration: none;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.qr-link:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
 /* Action Buttons */
 .buttons-container {
   display: flex;
