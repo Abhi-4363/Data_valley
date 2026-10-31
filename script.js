@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Force PDF Download (fetch → Blob → hidden link) ──────────────────────
   function downloadPdf() {
     const pdfUrl = 'certificate.pdf';
-    const fileName = 'Kommuri_Harshith_Krishna_Certificate_DV-1c5125fd.pdf';
+    const fileName = 'Kommuri_Harshith_Krishna_Certificate_DV-1c5125fc.pdf';
 
     fetch(pdfUrl)
       .then((response) => {
