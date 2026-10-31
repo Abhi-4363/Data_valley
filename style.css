@@ -1,0 +1,369 @@
+/* ==========================================================================
+   DATAVALLEY CERTIFICATE DETAILS - EXACT 1:1 DESIGN
+   ========================================================================== */
+
+:root {
+  --bg-gradient: radial-gradient(circle at 50% 22%, #0d3878 0%, #082452 45%, #030f24 100%);
+  --card-bg: linear-gradient(180deg, #09234c 0%, #05152f 100%);
+  --card-border: 1.5px solid rgba(85, 155, 235, 0.45);
+  --color-red: #f50325;
+  --color-yellow: #fee40c;
+  --color-white: #ffffff;
+  --btn-green: #00c752;
+  --btn-green-hover: #00b349;
+  --btn-blue: #057cf8;
+  --btn-blue-hover: #046edb;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  font-family: var(--font-family);
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Wrapper */
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 14px 40px;
+}
+
+/* Top DATAVALLEY Logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.brand-logo-img {
+  width: 275px;
+  height: auto;
+  max-width: 88vw;
+  display: block;
+}
+
+/* Certificate Details Card */
+.card-container {
+  width: 100%;
+  max-width: 410px;
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(20, 90, 200, 0.22);
+  padding: 28px 20px 32px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Red Title: Certificate Details */
+.card-title {
+  color: var(--color-red);
+  font-size: 1.82rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin-bottom: 22px;
+  line-height: 1.2;
+}
+
+/* Card Content List */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Yellow Labels & White Values */
+.label-yellow {
+  color: var(--color-yellow);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.value-white {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* Awarded to Block */
+.item-block {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.awardee-name {
+  color: var(--color-white);
+  font-size: 1.38rem;
+  font-weight: 800;
+  margin-top: 4px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+}
+
+/* Inline Items (Course, Branch, College, etc.) */
+.item-inline {
+  margin-bottom: 15px;
+  font-size: 1.04rem;
+  line-height: 1.42;
+  width: 100%;
+  max-width: 96%;
+}
+
+.item-inline .label-yellow {
+  margin-right: 4px;
+}
+
+/* QR Code Block */
+.qr-block {
+  margin-top: 6px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-image-wrapper {
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.qr-img {
+  width: 140px;
+  height: 140px;
+  display: block;
+}
+
+/* Action Buttons */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.btn {
+  width: 192px;
+  height: 48px;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.btn i {
+  font-size: 1rem;
+}
+
+.btn-view {
+  background-color: var(--btn-green);
+  box-shadow: 0 4px 14px rgba(0, 199, 82, 0.3);
+}
+
+.btn-view:hover {
+  background-color: var(--btn-green-hover);
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 18px rgba(0, 199, 82, 0.45);
+}
+
+.btn-view:active {
+  transform: translateY(0);
+}
+
+.btn-download {
+  background-color: var(--btn-blue);
+  box-shadow: 0 4px 14px rgba(5, 124, 248, 0.3);
+}
+
+.btn-download:hover {
+  background-color: var(--btn-blue-hover);
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 18px rgba(5, 124, 248, 0.45);
+}
+
+.btn-download:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   VIEW CERTIFICATE MODAL
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(2, 6, 20, 0.88);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  background: #091c38;
+  border: 1px solid rgba(80, 150, 240, 0.4);
+  border-radius: 12px;
+  max-width: 950px;
+  width: 100%;
+  height: 92vh;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: scale(0.96);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-card {
+  transform: scale(1);
+}
+
+/* Modal Header Bar */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: #05142b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-btn-download {
+  background: #057cf8;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+.modal-btn-download:hover {
+  background: #046edb;
+}
+
+.modal-btn-external {
+  color: #94a3b8;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.modal-btn-external:hover {
+  color: #ffffff;
+}
+
+.modal-btn-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.modal-btn-close:hover {
+  color: #ffffff;
+}
+
+/* PDF Iframe Viewer */
+.modal-pdf-viewer {
+  flex: 1;
+  overflow: hidden;
+  background: #020712;
+  display: flex;
+  min-height: 0;
+}
+
+.cert-pdf-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .card-container {
+    padding: 24px 16px 28px;
+    border-radius: 12px;
+  }
+  .card-title {
+    font-size: 1.65rem;
+  }
+  .awardee-name {
+    font-size: 1.25rem;
+  }
+  .label-yellow, .value-white, .item-inline {
+    font-size: 0.98rem;
+  }
+  .modal-image-scroller {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "datavalley-certificate-verification",
+  "version": "1.0.0",
+  "description": "Official DataValley Certificate Verification Portal for Kommuri Harshith Krishna",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve ."
+  },
+  "keywords": [
+    "certificate",
+    "verification",
+    "datavalley",
+    "ai-agent",
+    "credentials"
+  ],
+  "author": "DataValley",
+  "license": "ISC"
+}

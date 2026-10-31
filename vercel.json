@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "hk-certificate-verification",
+  "routes": [
+    {
+      "src": "/verify/(.*)",
+      "dest": "/index.html?id=$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

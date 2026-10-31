@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Details - Kommuri Harshith Krishna</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="main-wrapper">
+    
+    <!-- Top DATAVALLEY Logo -->
+    <div class="logo-container">
+      <img src="logo_transparent.png" alt="DATAVALLEY - IT SOLUTIONS | TRAININGS | PLACEMENTS" class="brand-logo-img">
+    </div>
+
+    <!-- Certificate Details Card -->
+    <section class="card-container" aria-label="Certificate Details">
+      
+      <h1 class="card-title">Certificate Details</h1>
+
+      <div class="card-content">
+        
+        <!-- Awarded to -->
+        <div class="item-block">
+          <div class="label-yellow">Awarded to:</div>
+          <div class="awardee-name">Kommuri Harshith Krishna</div>
+        </div>
+
+        <!-- Course -->
+        <div class="item-inline">
+          <span class="label-yellow">Course:</span>
+          <span class="value-white">AI Automation & Agent Engineering</span>
+        </div>
+
+        <!-- Branch -->
+        <div class="item-inline">
+          <span class="label-yellow">Branch:</span>
+          <span class="value-white">CSE (Artificial Intelligence)</span>
+        </div>
+
+        <!-- College -->
+        <div class="item-inline">
+          <span class="label-yellow">College:</span>
+          <span class="value-white">KKR & KSR Institute of Technology and Sciences Guntur</span>
+        </div>
+
+        <!-- University -->
+        <div class="item-inline">
+          <span class="label-yellow">University:</span>
+          <span class="value-white">JNTU Kakinada</span>
+        </div>
+
+        <!-- Duration -->
+        <div class="item-inline">
+          <span class="label-yellow">Duration:</span>
+          <span class="value-white">360 Hours</span>
+        </div>
+
+        <!-- Issued Date -->
+        <div class="item-inline">
+          <span class="label-yellow">Issued Date:</span>
+          <span class="value-white">7/2/2026</span>
+        </div>
+
+        <!-- Certificate ID -->
+        <div class="item-inline">
+          <span class="label-yellow">Certificate ID:</span>
+          <span class="value-white">DV-1c5125fd</span>
+        </div>
+
+        <!-- QR Code -->
+        <div class="qr-block">
+          <div class="label-yellow" style="margin-bottom: 8px;">Scan QR Code:</div>
+          <div class="qr-image-wrapper">
+            <img src="qrcode.png" alt="Scan QR Code" class="qr-img">
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons-container">
+          <!-- View Certificate Button -->
+          <button class="btn btn-view" id="btnViewCertificate" type="button">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>View Certificate</span>
+          </button>
+
+          <!-- Download PDF Button -->
+          <button class="btn btn-download" id="btnDownloadPdf" type="button">
+            <i class="fa-solid fa-arrow-down"></i>
+            <span>Download PDF</span>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       VIEW CERTIFICATE MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="certificateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      
+      <!-- Top Action Bar -->
+      <div class="modal-header">
+        <div class="modal-title" id="modalTitle">
+          <i class="fa-solid fa-award" style="color: #ffd700;"></i>
+          <span>Official Certificate of Internship</span>
+        </div>
+        <div class="modal-header-actions">
+          <button class="modal-btn-download" id="modalDownloadBtn" type="button" title="Download Official PDF">
+            <i class="fa-solid fa-download"></i>
+            <span>Download PDF</span>
+          </button>
+          <a class="modal-btn-external" href="certificate.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in new tab">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          <button class="modal-btn-close" id="modalCloseBtn" aria-label="Close" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Certificate PDF Embed -->
+      <div class="modal-pdf-viewer">
+        <iframe
+          src="certificate.pdf"
+          id="certPdfFrame"
+          class="cert-pdf-iframe"
+          title="Official Certificate - Kommuri Harshith Krishna"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

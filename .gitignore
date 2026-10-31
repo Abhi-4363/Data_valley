@@ -1,0 +1,9 @@
+# Generated large files - not needed in the repo
+certificate.jpg
+certificate.png
+certificate_display.jpg
+logo.png
+logo_exact.png
+logo_from_cert.png
+node_modules/
+*.log
